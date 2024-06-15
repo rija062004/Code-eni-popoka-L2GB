@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Western Bang Bang';
+    src: url('../police/Western Bang Bang.woff') format('woff');
+}
+@font-face {
+    font-family: 'Font';
+    src: url('../police/sansation_bold.woff') format('woff');
+  }
+body{
+    background-image: url("../image/back.jpg");
+    background-size: cover;
+}
+.paragraphe{
+    font-family: 'Western Bang Bang';
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    margin-top: 6%;
+}
+.form{
+    margin: 1em 30em 0 30em;
+    padding: 3em 0 3em 5em; 
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.367);
+}
+label{
+    color: white;
+    font-size: 19px;
+}
+.input{
+    width: 17em;
+    height: 2em;
+}
+#submit{
+    margin-left: 6em;
+    background-color: rgba(32, 161, 151, 0.467);
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+    color: white;
+}
+.deconnexion{
+    margin-top: 8em;
+}

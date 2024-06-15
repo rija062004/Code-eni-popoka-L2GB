@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="./assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Accueil</title>
+    <script src="css/jquery-3.5.1.min.js"></script>
+    <script src="css/bootstrap.min.css"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+     <link rel="stylesheet" href="./css/product.css">
+     <link rel="stylesheet" href="./css/navbars.css">
+      
+     <script src="./css/jquery-3.5.1.min.js"></script>
+     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="./bootstrap-5.2.3-dist/js/bootstrap.js"></script>
+     <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+     <script src="./bootstrap-5.2.3-dist/js/bootstrap.esm.js"></script>
+     <script src="."></script>
+     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+  </head>
+ 
+  <style>
+   
+  </style>
+  <div class="grand">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CitizenConnect</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="dash.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Etat-Civil
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="naissance.php">Acte de naissance</a></li>
+                <li><a class="dropdown-item" href="mariage.php">Acte de mariage</a></li>
+                <li><a class="dropdown-item" href="deces.php">Acte de décés</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Permis
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="permisconduire.php">Permis de conduire</a></li>
+                <li><a class="dropdown-item" href="permisconstruire.php">Permis de construction</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Impot
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="impot.php">Paiment</a></li>
+                <li><a class="dropdown-item" href="categorie.php">Ajout de catégorie</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            
+            <a class="btn btn-outline-primary" type="button" href="index.php">Déconnecter</a>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary" id="banner">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <h1 class="display-3 fw-bold" id="welcome-text"></h1>
+    </div>
+   </div>
+ 
+  
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const text = "Bienvenue sur notre site";
+      const welcomeText = document.getElementById("welcome-text");
+      let i = 0;
+
+      function typeWriter() {
+        if (i < text.length) {
+          welcomeText.innerHTML += text.charAt(i);
+          welcomeText.style.opacity = 1;
+          i++;
+          setTimeout(typeWriter, 100);
+        }
+      }
+
+      typeWriter();
+       // function toggle
+       document.getElementById('toggle-acte').addEventListener('click', function() {
+          const menu = document.getElementById('acte-menu');
+          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        document.getElementById('toggle-permit').addEventListener('click', function() {
+          const menu = document.getElementById('permit-menu');
+          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+      
+    });
+  </script>
+    </body>
+</html>
